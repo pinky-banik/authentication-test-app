@@ -1,0 +1,5 @@
+.music-container{
+    display: grid;
+    grid-template-columns: 3fr ;
+    margin:7% ;
+}
