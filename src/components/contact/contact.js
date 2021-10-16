@@ -2,8 +2,8 @@ import React from 'react';
 
 const Contact = () => {
     return (
-        <div>
-            <div class="contact3 py-5">
+        <div >
+            <div class="contact3 py m-5">
                 <div class="row no-gutters">
                   <div class="container">
                     <div class="row">
