@@ -15,7 +15,7 @@ initial setup
 2. create web app
 3. get configuration 
 4. initialize firebase
-5.  enble auth method
+5.  enable auth method
 
 =====================
 */
