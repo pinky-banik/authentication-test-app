@@ -6,13 +6,14 @@ import { Nav } from 'react-bootstrap';
 import { Container } from 'react-bootstrap';
 import logo from '../../image/music logo.png';
 import "./header.css";
+import { Link } from 'react-router-dom';
 
 const header = () => {
     return (
         <div className="header">
             {/* ===========navbar========== */}
                 <div className="navbar" id="home">
-                <Navbar className ="color-nav fixed-top"  collapseOnSelect expand="lg"  variant="dark">
+                <Navbar className ="color-nav fixed-top" collapseOnSelect expand="lg"  variant="dark">
                 <Container>
                 <Navbar.Brand href="/home"> <img src={logo} alt="" /> Music Notes</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -21,16 +22,24 @@ const header = () => {
                     
                     </Nav>
                     <Nav>
-                    <Nav.Link href="/home">Home</Nav.Link>
-                    <Nav.Link href="/about">About</Nav.Link>
+                    <Link to="/home" style={{textDecoration:"none"}}>
+                        <Nav.Link href="/home" >Home</Nav.Link>
+                    </Link>
+                    <Link to="/about" style={{textDecoration:"none"}}>
+                        <Nav.Link href="/about">About</Nav.Link>
+                    </Link>
+                    
                     <NavDropdown title="Sevices" id="collasible-nav-dropdown">
-                        <NavDropdown.Item href="/service">Guiter</NavDropdown.Item>
-                        <NavDropdown.Item href="/service">Piano</NavDropdown.Item>
-                        <NavDropdown.Item href="/service">violin</NavDropdown.Item>
+                        <Link to="/service" style={{textDecoration:"none"}} ><NavDropdown.Item href="/service">Guiter</NavDropdown.Item></Link>
+                        <Link to="/service"style={{textDecoration:"none"}}><NavDropdown.Item href="/service">Piano</NavDropdown.Item></Link>
+                        <Link to="/service"style={{textDecoration:"none"}}><NavDropdown.Item href="/service">Violin</NavDropdown.Item></Link>
                         <NavDropdown.Divider />
-                        <NavDropdown.Item href="/service">More</NavDropdown.Item>
+                        <Link to="/service"style={{textDecoration:"none"}}><NavDropdown.Item href="/service">More</NavDropdown.Item></Link>
                     </NavDropdown>
-                    <Nav.Link href="/contact">Contact</Nav.Link>
+                    <Link to="/contact"style={{textDecoration:"none"}}><Nav.Link href="#contact">Contact</Nav.Link></Link>
+                    <NavDropdown.Divider />
+                    <Nav.Link href="">Signed in as :{} </Nav.Link>
+                    <Nav.Link href=""> <button className="btn btn-primary">login</button> </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
                 </Container>

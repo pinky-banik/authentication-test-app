@@ -1,5 +1,5 @@
 [{
-    "key": "1",
+    "id": "1",
     "name": "Acoustic Guitar",
     "details":"After delta blues, country music was the first style of popular music based around the guitar, and the prominent guitar lines in the recordings of Jimmie Rodgers.",
     "rating":"4.6",
@@ -7,7 +7,7 @@
     "img": "https://cmhof.imgix.net/content/uploads/2019/03/11072346/instrument_guitar.jpg"
 },
 {
-    "key": "2",
+    "id": "2",
     "name": "Electric Guitar",
     "details":"The first viable electric guitar was introduced by the Rickenbacker company in 1932, giving guitarists the volume necessary to compete with other instruments.",
     "rating":"4.4",
@@ -15,7 +15,7 @@
     "img": "https://cmhof.imgix.net/content/uploads/2019/03/11072346/instrument_electric_guitar.jpg"
 },
 {
-    "key": "3",
+    "id": "3",
     "name": "Fiddle",
     "details":"First brought to America from the British Isles, the fiddle has always been one of the principal instruments in country music. Recorded country music began in 1992.",
     "rating":"4.1",
@@ -23,15 +23,15 @@
     "img": "https://cmhof.imgix.net/content/uploads/2019/03/11072346/instrument_fiddle.jpg"
 },
 {
-    "key": "4",
+    "id": "4",
     "name": "Accordion",
-    "details":"A reed instrument developed in early 19th-century Europe, the accordion is worn like a vest and made of right and left hand keyboards that are connected by a bellows.",
+    "details":"A reed instrument developed in early 19th-century Europe, the accordion is worn like a vest and made of right and left hand idboards that are connected by a bellows.",
     "rating":"3.8",
     "price":"9.85",
     "img": "https://cmhof.imgix.net/content/uploads/2019/03/11072347/instrument_accordiancmhof.jpg"
 },
 {
-    "key": "5",
+    "id": "5",
     "name": "Banjo",
     "details":"Banjos are plucked stringed instruments whose distinctive tones stem from the strings being supported by a bridge that rests on a tightly stretched skin membrane.",
     "rating":"4.2",
@@ -39,7 +39,7 @@
     "img": "https://cmhof.imgix.net/content/uploads/2019/03/11072347/instrument_banjo.jpg"
 },
 {
-    "key": "6",
+    "id": "6",
     "name": "Drums",
     "details":"The drums were not a part of the original instrument configuration used in country music. A contemporary drum or trap set usually consists of a bass or kick drum.",
     "rating":"4.5",
@@ -47,7 +47,7 @@
     "img": "https://cmhof.imgix.net/content/uploads/2019/03/11072346/instrument_drum.jpg"
 },
 {
-    "key": "7",
+    "id": "7",
     "name": "Harmonica",
     "details":"Invented in Europe in the 1820s, the mouth harmonica has a series of chambers containing reeds that vibrate as the player inhales and exhales and use a multiple of harps.",
     "rating":"4.1",
@@ -55,7 +55,7 @@
     "img": "https://cmhof.imgix.net/content/uploads/2019/03/11072346/instrument_harmonica.jpg"
 },
 {
-    "key": "8",
+    "id": "8",
     "name": "Mandolin",
     "details":"Derived from the ancient lutes of Renaissance Italy, the mandolin came into its present form as a short-necked instrument with eight paired strings in 18th-century Naples.",
     "rating":"3.8",
@@ -63,15 +63,15 @@
     "img": "https://cmhof.imgix.net/content/uploads/2019/03/11072345/instrument_mandolin.jpg"
 },
 {
-    "key": "9",
+    "id": "9",
     "name": "Piano",
-    "details":"The piano is made up of a series of levers and linkages whose strings are hammered when activated by playing the keys with the fingers. The piano hit its stride in 1930s.",
+    "details":"The piano is made up of a series of levers and linkages whose strings are hammered when activated by playing the ids with the fingers. The piano hit its stride in 1930s.",
     "rating":"4.7",
     "price":"14.11",
     "img": "https://cmhof.imgix.net/content/uploads/2019/03/11072345/instrument_piano.jpg"
 },
 {
-    "key": "10",
+    "id": "10",
     "name": "Zither",
     "details":"In the late 18th century, composed of a flat sound box with strings stretched across it, the zither is played horizontally with either a plectrum or the fingertips.",
     "rating":"4.00",
@@ -79,7 +79,7 @@
     "img": "https://cmhof.imgix.net/content/uploads/2019/03/11072345/instrument_zither.jpg"
 },
 {
-    "key": "11",
+    "id": "11",
     "name": "Dobro",
     "details":"The Dobro was invented by the Dopyera Brothers in the 1920s and modeled after the Hawaiian slack. the Dobro is played face up with a series of finger picks and a metal bar.",
     "rating":"4.3",
@@ -87,7 +87,7 @@
     "img": "https://cmhof.imgix.net/content/uploads/2019/03/11072346/instrument_dobro.jpg"
 },
 {
-    "key": "12",
+    "id": "12",
     "name": "Autoharp",
     "details":"A member of the zither family, the autoharp is played by strumming its strings with one hand while the other hand controls a bar which damps those not in the chord.",
     "rating":"3.7",

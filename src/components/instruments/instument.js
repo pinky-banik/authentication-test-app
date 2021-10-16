@@ -8,10 +8,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMusic } from '@fortawesome/free-solid-svg-icons';
 import './instrument.css';
 import Rating from 'react-rating';
+import { Link } from 'react-router-dom';
 
 const Instrument = (props) => {
     // destructuring
-    const{ name,img,rating,price,details}=props.instrument;
+    const{ id ,name,img,rating,price,details}=props.instrument;
     return(
         <div className="instrument">
             <div className="instrument-cards h-100">
@@ -35,7 +36,7 @@ const Instrument = (props) => {
             </ListGroup>
             <Card.Body className="card-color">
                 {/* ====== card button======= */}
-            <a href="/service"><Button variant="dark" style={{backgroundColor: "purple"}}> <FontAwesomeIcon icon={faMusic} /> Learn playing {name} </Button>{' '}</a>
+            <Link to={`/booking/${id}`}><Button variant="dark" style={{backgroundColor: "purple"}}> <FontAwesomeIcon icon={faMusic} /> Learn playing {name} </Button>{' '}</Link>
             </Card.Body>
             </Card>     
             </div>

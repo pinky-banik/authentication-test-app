@@ -8,14 +8,13 @@ const Footer = () => {
         <div>
                 <div className="site-footer">
                     {/* ==========footer container============== */}
-                    <div className="container">
+                    <div className="container" sticky >
                         <footer>
                         <div className="row">
                         <div className="col-sm-12 col-md-6">
                             <h6>About</h6>
                             <p className="text-justify">"Music Notes" courses about learning every musical instrument at a reasonable price. With these sites, you’ll have a great head start.</p>
                         </div>
-
                         <div className="col-xs-6 col-md-3">
                             <h6>Service</h6>
                             <ul className="footer-links">
