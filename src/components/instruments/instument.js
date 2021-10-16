@@ -10,9 +10,9 @@ import './instrument.css';
 import Rating from 'react-rating';
 import { Link } from 'react-router-dom';
 
-const Instrument = (props) => {
+const Instrument = ({instrument}) => {
     // destructuring
-    const{ id ,name,img,rating,price,details}=props.instrument;
+    const{ id ,name,img,rating,price,details}=instrument;
     return(
         <div className="instrument">
             <div className="instrument-cards h-100">

@@ -11,7 +11,7 @@ const Music = () => {
     }, []);
     return (
         <div className="music-container">
-            <h1 className="text-center fw-bolder">Music Notes Services</h1>
+            <h1 className="text-center fw-bolder">Music Notes 4y4rygigit Services</h1>
             <div className="instrument-container"> 
                 {
                     instruments.map(instrument=> <Instrument  key={instrument.key}
