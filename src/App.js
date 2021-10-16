@@ -10,6 +10,7 @@ import Contact from './components/contact/contact';
 import Booking from './components/booking/booking/booking';
 import Login from './components/login/login';
 import AuthProvider from './contexts/AuthProvider';
+import PrivateRoute from './components/login/privateRoute';
 
 function App() {
   return (
@@ -37,9 +38,9 @@ function App() {
           <Route path="/contact">
           <Contact></Contact>
           </Route>
-          <Route path="/booking/:serviceId">
+          <PrivateRoute path="/booking/:serviceId">
           <Booking></Booking>
-          </Route>
+          </PrivateRoute>
           <Route path="*">
           <NotFound></NotFound>
           </Route> 
