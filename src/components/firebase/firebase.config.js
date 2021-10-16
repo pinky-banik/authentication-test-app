@@ -1,18 +1,12 @@
 const firebaseConfig = {
 
-    apiKey: "AIzaSyCwdQg-L8wt3Jf5om5h1GVY6NBbclkqAyc",
-  
-    authDomain: "authentication-test-app-f59d4.firebaseapp.com",
-  
-    projectId: "authentication-test-app-f59d4",
-  
-    storageBucket: "authentication-test-app-f59d4.appspot.com",
-  
-    messagingSenderId: "1076146875770",
-  
-    appId: "1:1076146875770:web:65bea2b5a86235a5a8bac3",
-  
-    measurementId: "G-S2CB87WQFY"
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_FIREBASE_APP_ID,
+    measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
   
   };
 
