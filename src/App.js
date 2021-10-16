@@ -9,11 +9,13 @@ import NotFound from './components/notFound/notFound'
 import Contact from './components/contact/contact';
 import Booking from './components/booking/booking/booking';
 import Login from './components/login/login';
+import AuthProvider from './contexts/AuthProvider';
 
 function App() {
   return (
     <div className="app">
       {/* Routing */}
+      <AuthProvider>
       <Router>
       <Header></Header>
       <Switch>
@@ -44,6 +46,7 @@ function App() {
       </Switch>
       <Footer></Footer>
       </Router>
+      </AuthProvider>
     </div>
   );
 }

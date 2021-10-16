@@ -1,14 +1,16 @@
 import React from 'react'; 
 import 'bootstrap/dist/css/bootstrap.css';
-import { Navbar } from 'react-bootstrap';
+import { Button, Navbar } from 'react-bootstrap';
 import { NavDropdown } from 'react-bootstrap';
 import { Nav } from 'react-bootstrap';
 import { Container } from 'react-bootstrap';
 import logo from '../../image/music logo.png';
 import "./header.css";
 import { Link } from 'react-router-dom';
+import useAuth from '../../hooks/useAuth';
 
-const header = () => {
+const Header = () => {
+    const { user, logOut } = useAuth();
     return (
         <div className="header">
             {/* ===========navbar========== */}
@@ -38,8 +40,13 @@ const header = () => {
                     </NavDropdown>
                     <Link to="/contact"style={{textDecoration:"none"}}><Nav.Link href="#contact">Contact</Nav.Link></Link>
                     <NavDropdown.Divider />
-                    <Nav.Link href="">Signed in as :{} </Nav.Link>
-                    <Nav.Link href="/login"><button className="btn btn-primary">login</button> </Nav.Link>
+                    {user?.email ?
+                            <Button onClick={logOut} variant="light">Logout</Button> :
+                            <Nav.Link as={Link} to="/login">Login</Nav.Link>}
+                    <Navbar.Text>
+                            Signed in as: <a href="#login">{user?.displayName}</a>
+                        </Navbar.Text>
+                        
                     </Nav>
                 </Navbar.Collapse>
                 </Container>
@@ -50,4 +57,4 @@ const header = () => {
     );
 };
 
-export default header;
+export default Header;
