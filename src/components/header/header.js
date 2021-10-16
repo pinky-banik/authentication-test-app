@@ -39,10 +39,11 @@ const Header = () => {
                         <Link to="/service"style={{textDecoration:"none"}}><NavDropdown.Item href="/service">More</NavDropdown.Item></Link>
                     </NavDropdown>
                     <Link to="/contact"style={{textDecoration:"none"}}><Nav.Link href="#contact">Contact</Nav.Link></Link>
-                    <NavDropdown.Divider />
                     {user?.email ?
                             <Button onClick={logOut} variant="light">Logout</Button> :
                             <Nav.Link as={Link} to="/login">Login</Nav.Link>}
+                    <NavDropdown.Divider />
+                    
                     <Navbar.Text>
                             Signed in as: <a href="#login">{user?.displayName}</a>
                         </Navbar.Text>
